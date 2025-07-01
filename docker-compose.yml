@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+    postgres_metabase:
+        image: postgres:latest
+        container_name: postgres_metabase
+        environment:
+            POSTGRES_USER: metabaseuser
+            POSTGRES_PASSWORD: metabasepassword
+            POSTGRES_DB: metabasedb
+        ports:
+            - "5432:5432"
+        restart: always
+
+    metabase:
+        image: metabase/metabase:latest
+        container_name: metabase_app
+        ports:
+            - "3000:3030" # externo:interno
+        environment:
+            MB_DB_TYPE: postgres
+            MB_DB_DBNAME: metabasedb
+            MB_DB_PORT: 5432
+            MB_DB_USER: metabaseuser
+            MB_DB_PASS: metabasepassword
+            MB_DB_HOST: postgres_metabase
+        depends_on:
+            - postgres_metabase
+        restart: always
+
+    my_nginx:
+        image: nginx:latest
+        container_name: nginx_metabase
+        ports:
+            - "80:80"
+        volumes:
+            - ./nginx.conf:/etc/nginx/nginx.conf
+        depends_on:
+            - metabase
+        restart: always
