@@ -23,42 +23,44 @@ Este repositório contém uma stack Docker para executar um ambiente web complet
 ```bash
 git clone https://github.com/seu-usuario/webservices-docker.git
 cd webservices-docker
+```
+
 Inicie os containers:
 
-bash
-Copiar
-Editar
+```bash
 docker compose up -d
+```
+
 Acesse o WordPress no navegador:
 
-arduino
-Copiar
-Editar
+```bash
 http://localhost/prova
+```
+
 Para acessar o phpMyAdmin, use:
 
-arduino
-Copiar
-Editar
+```bash
 http://localhost:8080
-Configurações
-Banco MySQL está configurado com usuário: user e senha: password
+```
 
-Banco de dados padrão: wordpress
+### Configurações
+- Banco MySQL está configurado com usuário: user e senha: password
 
-O Nginx redireciona a raiz / para /prova, onde o WordPress está rodando
+- Banco de dados padrão: wordpress
+
+- O Nginx redireciona a raiz / para /prova, onde o WordPress está rodando
 
 Parar os containers
-bash
-Copiar
-Editar
+```bash
 docker compose down
-Observações
+```
+
+### Observações
 Certifique-se de que as portas 80, 3306 e 8080 não estejam em uso por outros serviços
 
 Os dados do MySQL ficam persistidos no volume Docker mysql_data
 
-Contribuição
+### Contribuição
 Pull requests são bem-vindos! Para mudanças maiores, abra uma issue para discussão prévia.
 
 Autor
@@ -68,4 +70,4 @@ Lucas Veiga
 
 Licença
 MIT License
-```
+
