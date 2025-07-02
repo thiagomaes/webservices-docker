@@ -9,7 +9,7 @@ Este repositório contém uma stack Docker para executar um ambiente web complet
 
 ---
 
-## Como usar
+# Como usar
 
 ### Pré-requisitos
 
