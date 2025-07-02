@@ -63,11 +63,35 @@ Os dados do MySQL ficam persistidos no volume Docker mysql_data
 ### Contribuição
 Pull requests são bem-vindos! Para mudanças maiores, abra uma issue para discussão prévia.
 
-Autor
-Thiago Maes
-Gabriel Massaia
-Lucas Veiga
+## Participantes
 
-Licença
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/thiagomaes">
+        <img src="https://github.com/thiagomaes.png" width="100px;" alt="Thiago Maes"/>
+        <br />
+        <sub><b>Thiago Maes</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/gabrielmassaia">
+        <img src="https://github.com/gabrielmassaia.png" width="100px;" alt="Gabriel Massaia"/>
+        <br />
+        <sub><b>Gabriel Massaia</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/LucasSetterVeiga">
+        <img src="https://github.com/LucasSetterVeiga.png" width="100px;" alt="Lucas Setter Veiga"/>
+        <br />
+        <sub><b>Lucas Setter Veiga</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+## Licença
 MIT License
 
